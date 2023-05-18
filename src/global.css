@@ -18,9 +18,9 @@ body {
   /* Colors */
   --color-white: #fff;
   --color-black: #000;
-  --color-darkgray: #979797;
 
   /* Gaps */
+  --gap-45xl: 64px;
   --gap-base: 16px;
   --gap-5xs: 8px;
 

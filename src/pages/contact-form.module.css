@@ -9,7 +9,7 @@
   line-height: 150%;
 }
 .sectionTitle {
-  width: 530px;
+  align-self: stretch;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,109 +19,96 @@
 .formBlockLabel {
   align-self: stretch;
   position: relative;
+  font-size: var(--font-size-sm);
   line-height: 150%;
-}
-.yourFullName {
-  position: relative;
-  line-height: 140%;
-  font-weight: 500;
-}
-.formTextInput,
-.inputWrapper {
-  align-self: stretch;
-  display: flex;
-  justify-content: flex-start;
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: left;
 }
 .formTextInput {
-  background-color: var(--color-white);
-  border: 1px solid var(--color-black);
-  box-sizing: border-box;
-  height: 42px;
-  flex-direction: row;
-  padding: var(--padding-xs);
-  align-items: center;
-  color: var(--color-darkgray);
+  border: 0;
+  background-color: transparent;
+  align-self: stretch;
 }
 .inputWrapper {
+  height: 73px;
   flex-direction: column;
-  align-items: flex-start;
   gap: var(--gap-5xs);
 }
-.mecompanycom {
-  flex: 1;
-  position: relative;
-  line-height: 140%;
-  font-weight: 500;
-}
-.formTextInput1 {
-  background-color: var(--color-white);
-  border: 1px solid var(--color-black);
-  box-sizing: border-box;
-  height: 42px;
-  padding: var(--padding-xs);
+.formTextarea,
+.inputWrapper,
+.textareaWrapper {
+  align-self: stretch;
+  display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  color: var(--color-darkgray);
 }
-.formButton,
-.formTextInput1,
 .formTextarea {
+  border: 1px solid var(--color-black);
+  font-weight: 500;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-sm);
+  background-color: var(--color-white);
+  box-sizing: border-box;
+  height: 100px;
+  flex-direction: row;
+  padding: var(--padding-xs);
+}
+.textareaWrapper {
+  flex-direction: column;
+  gap: var(--gap-5xs);
+}
+.sendMessage {
+  position: relative;
+  font-size: var(--font-size-xs);
+  line-height: 140%;
+  font-weight: 500;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: left;
+}
+.formButton {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-xs) var(--padding-5xl);
+  background-color: var(--color-black);
   align-self: stretch;
   display: flex;
   flex-direction: row;
-}
-.formTextarea {
-  background-color: var(--color-white);
-  border: 1px solid var(--color-black);
-  box-sizing: border-box;
-  height: 100px;
-  padding: var(--padding-xs);
-  align-items: flex-start;
-  justify-content: flex-start;
-  color: var(--color-darkgray);
-}
-.formButton {
-  background-color: var(--color-black);
-  padding: var(--padding-xs) var(--padding-5xl);
   align-items: center;
   justify-content: center;
-  font-size: var(--font-size-xs);
-  color: var(--color-white);
-}
-.form {
-  align-self: stretch;
-  align-items: flex-start;
-  gap: var(--gap-base);
 }
 .contactForm,
 .container,
-.form,
-.formWrapper {
+.form {
   display: flex;
+  align-items: flex-start;
+}
+.form {
+  align-self: stretch;
   flex-direction: column;
   justify-content: flex-start;
-}
-.formWrapper {
-  width: 500px;
-  align-items: flex-start;
-  text-align: left;
-  font-size: var(--font-size-sm);
+  gap: var(--gap-base);
 }
 .contactForm,
 .container {
-  align-items: center;
+  box-sizing: border-box;
 }
 .container {
-  width: 1200px;
-  gap: 40px;
+  width: 531px;
+  flex-direction: column;
+  padding: 0 var(--padding-5xl);
+  justify-content: flex-start;
+  gap: var(--gap-45xl);
 }
 .contactForm {
   position: relative;
   background-color: var(--color-white);
   width: 100%;
   overflow: hidden;
+  flex-direction: row;
   padding: var(--padding-45xl) var(--padding-5xl);
-  box-sizing: border-box;
+  justify-content: center;
   text-align: center;
   font-size: var(--font-size-13xl);
   color: var(--color-black);
